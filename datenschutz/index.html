@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Datenschutzerklärung – C-Orbit</title>
+  <meta name="description" content="Datenschutzerklärung für das Wear-OS-Watchface C-Orbit und die App C-Orbit Spielerzahl.">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<main>
+  <header>
+    <a class="brand" href="../">C-ORBIT</a>
+    <nav><a href="../datenschutz/">Datenschutz</a><a href="../impressum/">Impressum</a><a href="#english">English</a></nav>
+  </header>
+
+  <h1>Datenschutzerklärung für C-Orbit</h1>
+  <p class="meta">Stand: 2. Oktober 2026</p>
+
+  <p>Diese Datenschutzerklärung gilt für die Wear-OS-Apps</p>
+  <ul>
+    <li><strong>C-Orbit</strong> (Watchface, Paket <code>com.corepilots.corbit.watchface</code>) und</li>
+    <li><strong>C-Orbit Spielerzahl</strong> (Datenquelle, Paket <code>com.corepilots.corbit.data</code>)</li>
+  </ul>
+  <p>sowie für diese Webseite.</p>
+
+  <h2>1. Verantwortlicher</h2>
+  <p>
+    CorePilots<br>
+    Nelly-Sachs-Str. 14<br>
+    27356 Rotenburg<br>
+    Deutschland<br>
+    E-Mail: corepilots@gmail.com
+  </p>
+  <p>Weitere Angaben finden Sie im <a href="../impressum/">Impressum</a>.</p>
+
+  <h2>2. Kurzfassung</h2>
+  <ul>
+    <li>Die Apps erheben, speichern oder übermitteln <strong>keine personenbezogenen Daten an uns</strong>.</li>
+    <li>Es gibt <strong>keine Benutzerkonten, keine Analyse- oder Tracking-Werkzeuge und keine Werbung</strong> in den Apps.</li>
+    <li>Die App „C-Orbit Spielerzahl“ ruft etwa alle 10 Minuten die öffentliche Spielerzahl eines Spiels über die Steam Web API der Valve Corporation ab. Dabei wird technisch bedingt die <strong>IP-Adresse Ihrer Uhr bzw. Ihres Netzwerks an Valve</strong> übertragen.</li>
+    <li>Beim Besuch dieser Webseite verarbeitet der Hoster GitHub technisch bedingt Zugriffsdaten (siehe Abschnitt 6).</li>
+  </ul>
+
+  <h2>3. Watchface „C-Orbit“</h2>
+  <p>Das Watchface enthält keinen eigenen Programmcode und hat keinen Internetzugriff. Es zeigt Uhrzeit und Datum Ihrer Uhr sowie die Werte an, die die App „C-Orbit Spielerzahl“ als Komplikation bereitstellt. Dabei werden keine Daten erhoben oder übertragen.</p>
+
+  <h2>4. Datenquelle „C-Orbit Spielerzahl“</h2>
+
+  <h3>4.1 Abruf der Spielerzahl bei Steam</h3>
+  <p>Um die aktuelle Spielerzahl anzuzeigen, sendet die App etwa alle 10 Minuten eine Anfrage an
+     <code>https://api.steampowered.com/ISteamUserStats/GetNumberOfCurrentPlayers/v1/</code>.
+     Die Anfrage enthält nur die öffentliche Kennung des Spiels (App-ID). Sie enthält weder Ihr Steam-Konto noch andere Angaben zu Ihrer Person.</p>
+  <p>Technisch bedingt erhält Valve dabei die IP-Adresse, von der die Anfrage kommt, sowie übliche Verbindungsdaten wie Zeitpunkt und Geräte- bzw. Softwarekennung des Abrufs. Wir selbst erhalten diese Daten nicht.</p>
+  <ul>
+    <li><strong>Empfänger:</strong> Valve Corporation, Bellevue (Washington), USA</li>
+    <li><strong>Zweck:</strong> Abruf der öffentlichen Spielerzahl, die das Watchface anzeigt</li>
+    <li><strong>Rechtsgrundlage:</strong> Art. 6 Abs. 1 lit. f DSGVO. Unser berechtigtes Interesse liegt darin, die von Ihnen gewünschte Funktion des Watchfaces bereitzustellen. Die Anfrage erfolgt nur, wenn Sie die Komplikation nutzen.</li>
+    <li><strong>Drittlandübermittlung:</strong> Valve hat seinen Sitz in den USA. Dort kann ein geringeres Datenschutzniveau als in der EU bestehen. Für die Verarbeitung durch Valve gilt die <a href="https://store.steampowered.com/privacy_agreement/">Datenschutzerklärung von Valve</a>.</li>
+  </ul>
+
+  <h3>4.2 Speicherung auf Ihrer Uhr</h3>
+  <p>Die abgerufenen Spielerzahlen der letzten 24 Stunden werden nur lokal auf Ihrer Uhr gespeichert. Daraus berechnet die App Minimum, Maximum und den Verlauf. Ältere Werte werden automatisch gelöscht. Diese Daten verlassen Ihre Uhr nicht. Sie können sie jederzeit löschen, indem Sie in den App-Einstellungen von Wear OS die App-Daten löschen oder die App deinstallieren.</p>
+
+  <h3>4.3 Berechtigungen</h3>
+  <p>Die App benötigt nur die Berechtigung <strong>Internetzugriff</strong> (<code>INTERNET</code>), um die Spielerzahl abzurufen. Weitere Berechtigungen, zum Beispiel für Standort, Kontakte oder Gesundheitsdaten, werden nicht verwendet.</p>
+
+  <h2>5. Google Play</h2>
+  <p>Die Apps werden über Google Play vertrieben. Beim Herunterladen und Aktualisieren verarbeitet Google Daten in eigener Verantwortung, zum Beispiel Ihr Google-Konto und Ihre Geräteinformationen. Darauf haben wir keinen Einfluss. Es gilt die <a href="https://policies.google.com/privacy">Datenschutzerklärung von Google</a>.</p>
+
+  <h2>6. Hosting dieser Webseite</h2>
+  <p>Diese Webseite wird über den Dienst „GitHub Pages“ der GitHub, Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, USA, gehostet. Beim Aufruf der Seite verarbeitet GitHub technisch notwendige Zugriffsdaten. Dazu gehören IP-Adresse, Datum und Uhrzeit, aufgerufene Seite, Referrer sowie Browser- und Betriebssysteminformationen. Nach eigenen Angaben speichert GitHub die IP-Adressen der Besucher aus Sicherheitsgründen.</p>
+  <ul>
+    <li><strong>Zweck:</strong> Bereitstellung dieser Webseite mit den gesetzlich vorgeschriebenen Informationen sowie Schutz vor Missbrauch</li>
+    <li><strong>Rechtsgrundlage:</strong> Art. 6 Abs. 1 lit. f DSGVO. Unser berechtigtes Interesse liegt in einer einfachen, sicheren und kostenlosen Bereitstellung dieser Informationen.</li>
+    <li><strong>Drittlandübermittlung:</strong> GitHub hat seinen Sitz in den USA. Dort kann ein geringeres Datenschutzniveau als in der EU bestehen. Es gilt die <a href="https://docs.github.com/de/site-policy/privacy-policies/github-general-privacy-statement">Datenschutzerklärung von GitHub</a>.</li>
+  </ul>
+  <p>Diese Webseite selbst setzt keine Cookies, verwendet keine Analyse-Werkzeuge und bindet keine Schriften, Skripte oder sonstigen Inhalte von Dritten ein.</p>
+
+  <h2>7. Ihre Rechte</h2>
+  <p>Sie haben nach der DSGVO das Recht auf Auskunft (Art. 15), Berichtigung (Art. 16), Löschung (Art. 17), Einschränkung der Verarbeitung (Art. 18), Datenübertragbarkeit (Art. 20) und Widerspruch gegen eine Verarbeitung auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO (Art. 21).</p>
+  <p>Da wir selbst keine personenbezogenen Daten über Sie speichern, können wir in der Regel keine Auskunft über bei uns gespeicherte Daten erteilen. Wenden Sie sich für Daten, die Valve, Google oder GitHub verarbeiten, bitte direkt an diese Unternehmen.</p>
+  <p>Sie haben außerdem das Recht, sich bei einer Datenschutz-Aufsichtsbehörde zu beschweren, insbesondere in dem Mitgliedstaat Ihres Aufenthaltsorts.</p>
+
+  <h2>8. Änderungen</h2>
+  <p>Wenn sich die Funktionen der Apps oder dieser Webseite ändern, passen wir diese Datenschutzerklärung an. Es gilt die jeweils hier veröffentlichte Fassung.</p>
+
+  <p class="note">C-Orbit ist ein inoffizielles Fan-Projekt und nicht mit Bungie, Inc., Sony Interactive Entertainment oder der Valve Corporation verbunden. Steam ist eine Marke der Valve Corporation, Marathon ist eine Marke von Bungie, Inc.</p>
+
+  <hr>
+
+  <section id="english" lang="en">
+    <h1>Privacy Policy for C-Orbit</h1>
+    <p class="meta">Last updated: October 2, 2026</p>
+
+    <p>This policy covers the Wear OS apps <strong>C-Orbit</strong> (watch face, <code>com.corepilots.corbit.watchface</code>) and <strong>C-Orbit Spielerzahl</strong> (data source, <code>com.corepilots.corbit.data</code>), and this website.</p>
+
+    <p><strong>Controller:</strong> CorePilots, Nelly-Sachs-Str. 14, 27356 Rotenburg, Deutschland, E-Mail: corepilots@gmail.com</p>
+
+    <ul>
+      <li><strong>No personal data is collected by us.</strong> There are no accounts, analytics, tracking or ads in the apps.</li>
+      <li><strong>Watch face:</strong> The watch face contains no code and has no internet access.</li>
+      <li><strong>Data source:</strong> About every 10 minutes, the data source app requests the public player count of a game from the Steam Web API (<code>api.steampowered.com</code>) operated by Valve Corporation, USA. The request contains only the public game ID. As with any internet request, Valve receives the IP address of your watch or network. Legal basis: Art. 6(1)(f) GDPR (providing the feature you chose to use). See <a href="https://store.steampowered.com/privacy_agreement/">Valve's privacy policy</a>.</li>
+      <li><strong>Local storage:</strong> Player counts from the last 24 hours are stored only on your watch and deleted automatically. You can delete them by clearing the app data or uninstalling the app.</li>
+      <li><strong>Permissions:</strong> INTERNET only.</li>
+      <li><strong>Google Play:</strong> Google processes data under its own responsibility when you download apps (<a href="https://policies.google.com/privacy">Google Privacy Policy</a>).</li>
+      <li><strong>Website hosting:</strong> This website is hosted on GitHub Pages by GitHub, Inc., USA. GitHub processes access data such as IP address, time, requested page and browser information, and logs visitor IP addresses for security purposes. Legal basis: Art. 6(1)(f) GDPR. See <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub's privacy statement</a>. This website itself sets no cookies, uses no analytics and loads no third-party resources.</li>
+      <li><strong>Your rights:</strong> You have the rights of access, rectification, erasure, restriction, portability and objection under the GDPR, and the right to lodge a complaint with a supervisory authority.</li>
+    </ul>
+
+    <p class="note">C-Orbit is an unofficial fan project, not affiliated with or endorsed by Bungie, Inc., Sony Interactive Entertainment or Valve Corporation. Steam is a trademark of Valve Corporation, Marathon is a trademark of Bungie, Inc.</p>
+  </section>
+
+  <footer><a href="../">Start</a> · <a href="../impressum/">Impressum</a></footer>
+</main>
+</body>
+</html>
